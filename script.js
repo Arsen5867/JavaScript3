@@ -23,42 +23,41 @@ author.style.borderWidth = '7px';
 
 class Laptop{
     constructor(){
-        this.название = 'Asus TUF Gaming FX505DY-BQ009',
-        this.модельПроцесора = 'AMD Ryzen 5 3550H',
-        this.серийныйНомер = '24343535',
-        this.годИзготовления = '2020',
-        this.размерОЗУ = '8',
-        this.размерПЗУ = '500 SSD',
-        this.наличиеДисковода = 'да',
-        this.масса = '1.5 кг'
+        this.title = 'Asus TUF Gaming FX505DY-BQ009',
+        this.processorModel = 'AMD Ryzen 5 3550H',
+        this.serialNumber = '24343535',
+        this.YearOfManufacture = '2020',
+        this.RAMSize = '8',
+        this.ROMSize = '500 SSD',
+        this.diskAvailability = 'да',
+        this.weight = '1.5 кг'
     }
 };
 
 let laptop = new Laptop();
 
-console.log(laptop.размерОЗУ);
+console.log(laptop.RAMSize);
 
-console.log(laptop.размерПЗУ);
+console.log(laptop.ROMSize);
 
 class Ultrabook {
     constructor() {
-        this.название = 'Asus Zenbook UM433DA-A5003',
-        this.модельПроцесора = 'AMD Ryzen 5 3500U',
-        this.серийныйНомер = '68543535',
-        this.годИзготовления = '2019',
-        this.размерОЗУ = '4',
-        this.размерПЗУ = '256 Гб SSD',
-        this.наличиеДисковода = 'нет',
-        this.масса = '1 кг'
+        this.title = 'Asus Zenbook UM433DA-A5003',
+        this.processorModel = 'AMD Ryzen 5 3500U',
+        this.serialNumber = '68543535',
+        this.YearOfManufacture = '2019',
+        this.RAMSize = '4',
+        this.ROMSize = '256 Гб SSD',
+        this.diskAvailability = 'нет',
+        this.weight = '1 кг'
         Ultrabook.count += 8;
     }
-};
-
+};  
 Ultrabook.count = 0;
 
 let ultrabook = new Ultrabook();
 
-console.log(ultrabook.годИзготовления);
+console.log(ultrabook.YearOfManufacture);
 
 console.log(Ultrabook.count);
 
