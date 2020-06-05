@@ -95,7 +95,8 @@ inputData.addEventListener('keypress', function(keyPressed){
         let now = new Date().toLocaleString();
         let newTodo = this.value + "" + " "; /*получение value из input*/
         this.value = ''; /*Очистка поля ввода*/
-            if (newTodo === "" + " ") {
+        if (newTodo.trim() == "") {
+                alert("ОШИБКА")
                 newSpan.innerHTML = "";
                 newLi = "";
             }
